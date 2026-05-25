@@ -18,12 +18,6 @@
 
 !README.md
 
-!LICENSE
-
-!CONTRIBUTING.md
-
-!CHANGELOG.md
-
 !tauthesis.cls
 
 !titlepage.tex
@@ -33,11 +27,18 @@
 !set-pdf-version.tex
 
 !main.tex
+!main.pdf
 
 ## Allow file types in subdirectories.
 
 !tex/
 !tex/*.tex
+
+!images/
+!images/**/
+!images/**/*.jpg
+!images/**/*.png
+
 
 !code/
 !code/*.c
@@ -59,7 +60,9 @@
 
 !figures/
 !figures/**/*.eps
-
+!figures/**/*.jpg
+!figures/**/*.pdf
+!figures/**/*.png
 
 # Disallow PDF figures automatically generated from EPS via epstopdf. Only the
 # original EPS figures should be in the repository to avoid repetition.
