@@ -59,9 +59,7 @@
 
 !figures/
 !figures/**/*.eps
-!figures/**/*.jpg
-!figures/**/*.pdf
-!figures/**/*.png
+
 
 # Disallow PDF figures automatically generated from EPS via epstopdf. Only the
 # original EPS figures should be in the repository to avoid repetition.
