@@ -1,0 +1,180 @@
+\newacronym{ai}{AI}{Artificial Intelligence}
+\newacronym{dm}{DM}{Diffusion Model}
+\newacronym{ddpm}{DDPM}{Denoising Diffusion Probabilistic Model}
+\newacronym{elbo}{ELBO}{Evidence Lower Bound}
+\newacronym{kl}{KL}{Kullback-Leibler divergence}
+\newacronym{peft}{PEFT}{Parameter-Efficient Fine-Tuning}
+\newacronym{lora}{LoRA}{Low-Rank Adaptation}
+\newacronym{t2i}{T2I}{Text-to-Image}
+\newacronym{ldm}{LDM}{Latent Diffusion Model}
+\newacronym{vae}{VAE}{Variational Autoencoder}
+\newacronym{sdxl}{SDXL}{Stable Diffusion XL}
+\newacronym{clip}{CLIP}{Contrastive Language–Image Pretraining}
+\newacronym{gan}{GAN}{Generative Adversarial Network}
+\newacronym{cv}{CV}{Computer Vision}
+\newacronym{ap}{AP}{Average Precision}
+\newacronym{coco}{COCO}{Common Objects in Context}
+\newacronym{cnn}{CNN}{Convolutional Neural Network}
+\newacronym{nir}{NIR}{Near-Infrared}
+\newacronym{relu}{ReLU}{Rectified Linear Unit}
+\newacronym{llm}{LLM}{Large Language Model}
+\newacronym{mlp}{MLP}{Multilayer Perceptron}
+\newacronym{rcnn}{R-CNN}{Regions with CNN features}
+\newacronym{vit}{ViT}{Vision Transformer}
+\newacronym{detr}{DETR}{Detection Transformer}
+\newacronym{iou}{IoU}{Intersection over Union}
+\newacronym{YOLO}{YOLO}{You Only Look Once}
+\newacronym{TP}{TP}{True Positive}
+\newacronym{FP}{FP}{False Positive}
+\newacronym{FN}{FN}{False Negative}
+\newacronym{mAP}{mAP}{mean Average Precision}
+\newacronym{GPT}{GPT}{Generative Pre-trained Transformer}
+\newacronym{syn2real}{Syn2Real}{Synthetic-to-Real}
+\newacronym{cfg}{CFG}{Classifier-Free Guidance}
+
+
+\newglossaryentry{x0}{
+name={\ensuremath{x_0}},
+description={Data sample at the initial forward diffusion step}
+}
+
+\newglossaryentry{xt}{
+name={\ensuremath{x_t}},
+description={Data sample at an intermediate forward diffusion step}
+}
+
+\newglossaryentry{xT}{
+name={\ensuremath{x_T}},
+description={Data sample at the final forward diffusion step}
+}
+
+\newglossaryentry{epsilon}{
+name={\ensuremath{\epsilon}},
+description={Standard Gaussian noise}
+}
+
+\newglossaryentry{beta_t}{
+name={\ensuremath{\beta_t}},
+description={Forward process variance at step \ensuremath{t}}
+}
+
+\newglossaryentry{alpha_t}{
+name={\ensuremath{\alpha_t}},
+description={Signal retention rate \ensuremath{\alpha_t = 1 - \beta_t}}
+}
+
+\newglossaryentry{alpha_bar_t}{
+name={\ensuremath{\bar{\alpha}_t}},
+description={Cumulative product of the signal retention rate over time steps, \ensuremath{\bar{\alpha}_t = \prod_{s=1}^{t} \alpha_s}}
+}
+
+\newglossaryentry{p_theta}{
+name={\ensuremath{p_\theta(\cdot)}},
+description={Learned reverse process distribution}
+}
+
+\newglossaryentry{q}{
+name={\ensuremath{q(\cdot)}},
+description={Forward process distribution}
+}
+
+\newglossaryentry{mu_theta}{
+name={\ensuremath{\mu_\theta(x_t, t)}},
+description={Mean of the reverse process at step \ensuremath{t}}
+}
+
+\newglossaryentry{Sigma_theta}{
+name={\ensuremath{\Sigma_\theta(x_t, t)}},
+description={Covariance of the reverse process at step \ensuremath{t}}
+}
+
+\newglossaryentry{L}{
+name={\ensuremath{L}},
+description={Loss function}
+}
+
+\newglossaryentry{W}{
+name={\ensuremath{W}},
+description={Weight matrix}
+}
+
+\newglossaryentry{E}{
+name={\ensuremath{E}},
+description={Embedding matrix}
+}
+
+\newglossaryentry{expectation}{
+name={\ensuremath{\mathbb{E}[\cdot]}},
+description={Expectation operator}
+}
+
+\newglossaryentry{mu_tilde}{
+name={\ensuremath{\tilde{\mu}_t(x_t, x_0)}},
+description={Forward process posterior mean}
+}
+
+\newglossaryentry{beta_tilde}{
+name={\ensuremath{\tilde{\beta}_t}},
+description={Forward process posterior variance}
+}
+
+\newglossaryentry{epsilon_theta}{
+name={\ensuremath{\epsilon_\theta(x_t, t)}},
+description={Neural network’s predicted noise in \ensuremath{x_t} at timestep \ensuremath{t}}
+}
+
+
+\newglossaryentry{tau_theta}{
+name={\ensuremath{\tau_\theta(y)}},
+description={Encoded text prompt for conditioning in latent diffusion}
+}
+
+\newglossaryentry{z}{
+name={\ensuremath{z}},
+description={Latent representation of the data sample \ensuremath{x} in latent diffusion}
+}
+
+\newglossaryentry{E_D}{
+name={\ensuremath{\mathcal{E(\cdot)}, \mathcal{D(\cdot)}}},
+description={Encoder and decoder of the variational autoencoder (VAE)}
+}
+
+\newglossaryentry{r}{
+name={\ensuremath{r}},
+description={LoRA rank}
+}
+
+\newglossaryentry{alpha}{
+name={\ensuremath{\alpha}},
+description={LoRA scaling factor}
+}
+
+\newglossaryentry{s}{
+name={\ensuremath{s}},
+description={Guidance scale for classifier or classifier-free guidance}
+}
+
+\newglossaryentry{y_yneg}{
+name={\ensuremath{y, y_{neg}}},
+description={Conditional input embedding or negative prompt embedding}
+}
+
+\newglossaryentry{QKV}{
+name={\ensuremath{Q, K, V}},
+description={Query, Key, and Value matrices in attention mechanisms}
+}
+
+\newglossaryentry{phi_i}{
+name={\ensuremath{\phi_i(z_t)}},
+description={Flattened U-Net intermediate representation}
+}
+
+\newglossaryentry{N}{
+name={\ensuremath{\mathcal{N}(z;\mu, \Sigma)}},
+description={Normal distribution of random variable \ensuremath{z} with mean \ensuremath{\mu} and covariance \ensuremath{\Sigma}}
+}
+
+\newglossaryentry{I}{
+name={\ensuremath{I}},
+description={Identity matrix}
+}
